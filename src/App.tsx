@@ -1,5 +1,5 @@
 import { useState } from "react";
-import tw from "twin.macro";
+import "twin.macro";
 
 const App = () => {
   const [count, setCount] = useState(0);
