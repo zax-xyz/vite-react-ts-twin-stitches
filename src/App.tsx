@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "twin.macro";
+import { useState } from 'react';
+import 'twin.macro';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -14,7 +14,9 @@ const App = () => {
             onClick={() => setCount(count + 1)}
             type="button"
           >
-            count is: {count}
+            count is:
+            {' '}
+            {count}
           </button>
         </p>
       </header>
