@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npx eslint src",
+    "lint:fix": "npx eslint src --fix",
+    "format": "npx prettier --write src"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
