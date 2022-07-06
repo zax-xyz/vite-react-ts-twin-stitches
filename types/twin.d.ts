@@ -1,10 +1,13 @@
-import "twin.macro";
-import styledImport, { css as cssImport } from "@stitches/react";
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import 'twin.macro';
+import styledImport, { css as cssImport } from '@stitches/react';
 
 // Support a css prop when used with twins styled.div({}) syntax
 type CSSProp<T = AnyIfEmpty<DefaultTheme>> = string | CSSObject;
 
-declare module "react" {
+declare module 'react' {
   // The css prop
   interface HTMLAttributes<T> extends DOMAttributes<T> {
     css?: CSSProp;
@@ -22,8 +25,8 @@ type StyledTags = {
   [Tag in keyof JSX.IntrinsicElements]: CreateStyledComponent<JSX.IntrinsicElements[Tag]>;
 };
 
-declare module "twin.macro" {
+declare module 'twin.macro' {
   // The styled and css imports
-  const styled: StyledTags | typeof styledImport;
+  const styled: StyledTags & typeof styledImport;
   const css: typeof cssImport;
 }
