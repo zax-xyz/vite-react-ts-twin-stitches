@@ -1,4 +1,5 @@
 import tw, { globalStyles } from 'twin.macro';
+import type { TwStyle } from 'twin.macro';
 import { globalCss } from '../../stitches.config';
 
 const customStyles = {
@@ -7,7 +8,7 @@ const customStyles = {
 
 const styles = () => {
   globalCss(customStyles)();
-  globalCss(globalStyles as Record<any, any>)();
+  globalCss(globalStyles as Record<string, TwStyle>)();
 };
 
 export default styles;
