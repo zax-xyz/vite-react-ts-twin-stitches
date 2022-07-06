@@ -7,7 +7,7 @@ type CSSProp<_ = AnyIfEmpty<DefaultTheme>> = string | CSSObject;
 
 declare module 'react' {
   // The css prop
-  interface HTMLAttributes<_> extends DOMAttributes<T> {
+  interface HTMLAttributes<T> extends DOMAttributes<T> {
     css?: CSSProp;
     tw?: string;
   }
