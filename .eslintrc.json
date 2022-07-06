@@ -20,6 +20,12 @@
   "plugins": ["react"],
   "rules": {
     "no-console": "off",
+    "no-unused-vars": [1, {
+      "varsIgnorePattern": "^_"
+    }],
+    "@typescript-eslint/no-unused-vars": [1, {
+      "varsIgnorePattern": "^_"
+    }],
     "import/prefer-default-export": "off",
     "react/function-component-definition": [
       1,

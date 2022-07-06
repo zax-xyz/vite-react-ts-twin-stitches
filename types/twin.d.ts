@@ -1,20 +1,18 @@
 /* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import 'twin.macro';
 import styledImport, { css as cssImport } from '@stitches/react';
 
 // Support a css prop when used with twins styled.div({}) syntax
-type CSSProp<T = AnyIfEmpty<DefaultTheme>> = string | CSSObject;
+type CSSProp<_ = AnyIfEmpty<DefaultTheme>> = string | CSSObject;
 
 declare module 'react' {
   // The css prop
-  interface HTMLAttributes<T> extends DOMAttributes<T> {
+  interface HTMLAttributes<_> extends DOMAttributes<T> {
     css?: CSSProp;
     tw?: string;
   }
   // The inline svg css prop
-  interface SVGProps<T> extends SVGProps<SVGSVGElement> {
+  interface SVGProps<_> extends SVGProps<SVGSVGElement> {
     css?: CSSProp;
     tw?: string;
   }
