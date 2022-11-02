@@ -46,6 +46,25 @@
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
     "import/extensions": [1, "never"],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc" }
+      }
+    ],
+    "sort-imports": ["error", { "ignoreDeclarationSort": true }],
+    "@typescript-eslint/consistent-type-imports": "error",
     "react/no-unknown-property": [2, { "ignore": ["tw", "css"] }],
     "prettier/prettier": "error"
   },
