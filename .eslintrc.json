@@ -5,9 +5,11 @@
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:react/recommended",
     "airbnb",
     "airbnb/hooks",
+    "airbnb-typescript",
     "prettier",
     "plugin:import/recommended",
     "plugin:import/typescript",
