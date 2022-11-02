@@ -49,6 +49,7 @@
     "import/prefer-default-export": "off",
     "no-console": "off",
     "no-unused-vars": "off",
+    "no-void": "off",
     "prettier/prettier": "error",
     "react/function-component-definition": [
       "error",
