@@ -23,29 +23,12 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "no-console": "off",
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": [1, {
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-unused-vars": ["error", {
       "varsIgnorePattern": "^_"
     }],
-    "import/prefer-default-export": "off",
-    "react/function-component-definition": [
-      "error",
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
-    ],
-    "react/jsx-props-no-spreading": [
-      "error",
-      {
-        "custom": "ignore"
-      }
-    ],
-    "arrow-parens": ["error", "as-needed"],
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
     "import/extensions": ["error", "never"],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "import/order": [
       "error",
       {
@@ -63,10 +46,26 @@
         "alphabetize": { "order": "asc" }
       }
     ],
-    "sort-imports": ["error", { "ignoreDeclarationSort": true }],
-    "@typescript-eslint/consistent-type-imports": "error",
-    "react/no-unknown-property": [2, { "ignore": ["tw", "css"] }],
-    "prettier/prettier": "error"
+    "import/prefer-default-export": "off",
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "prettier/prettier": "error",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "custom": "ignore"
+      }
+    ],
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "react/no-unknown-property": ["error", { "ignore": ["tw", "css"] }],
+    "sort-imports": ["error", { "ignoreDeclarationSort": true }]
   },
   "settings": {
     "import/resolver": {
