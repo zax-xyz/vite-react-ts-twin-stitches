@@ -66,6 +66,7 @@
     ],
     "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
     "react/no-unknown-property": ["error", { "ignore": ["tw", "css"] }],
+    "react/require-default-props": "off",
     "sort-imports": ["error", { "ignoreDeclarationSort": true }]
   },
   "settings": {
