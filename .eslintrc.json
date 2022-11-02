@@ -30,22 +30,22 @@
     }],
     "import/prefer-default-export": "off",
     "react/function-component-definition": [
-      1,
+      "error",
       {
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
       }
     ],
     "react/jsx-props-no-spreading": [
-      1,
+      "error",
       {
         "custom": "ignore"
       }
     ],
-    "arrow-parens": [1, "as-needed"],
+    "arrow-parens": ["error", "as-needed"],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
-    "import/extensions": [1, "never"],
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "import/extensions": ["error", "never"],
     "import/order": [
       "error",
       {
