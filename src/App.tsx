@@ -14,9 +14,7 @@ const App = () => {
             onClick={() => setCount(count + 1)}
             type="button"
           >
-            count is:
-            {' '}
-            {count}
+            count is: {count}
           </button>
         </p>
       </header>
