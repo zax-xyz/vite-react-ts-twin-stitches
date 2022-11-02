@@ -44,7 +44,8 @@
     "arrow-parens": [1, "as-needed"],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
-    "import/extensions": [1, "never"]
+    "import/extensions": [1, "never"],
+    "react/no-unknown-property": [2, { "ignore": ["tw", "css"] }]
   },
   "settings": {
     "import/resolver": {
