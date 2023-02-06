@@ -24,6 +24,34 @@
   "plugins": ["react", "prettier"],
   "rules": {
     "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "allow"
+      },
+      {
+        "selector": "variable",
+        "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "allow"
+      },
+      {
+        "selector": "function",
+        "format": ["camelCase", "PascalCase"]
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "objectLiteralProperty",
+        "format": null
+      }
+    ],
+    "@typescript-eslint/no-shadow": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -31,7 +59,6 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "@typescript-eslint/no-shadow": "off",
     "import/extensions": ["error", "never"],
     "import/no-extraneous-dependencies": [
       "error",
@@ -60,8 +87,8 @@
     ],
     "import/prefer-default-export": "off",
     "no-console": "off",
-    "no-unused-vars": "off",
     "no-shadow": "off",
+    "no-unused-vars": "off",
     "no-void": "off",
     "prettier/prettier": "error",
     "react/function-component-definition": [
