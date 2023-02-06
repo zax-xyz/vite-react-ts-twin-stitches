@@ -24,11 +24,20 @@
   "plugins": ["react", "prettier"],
   "rules": {
     "@typescript-eslint/consistent-type-imports": "error",
-    "@typescript-eslint/no-unused-vars": ["error", {
-      "varsIgnorePattern": "^_"
-    }],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-shadow": "off",
     "import/extensions": ["error", "never"],
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
     "import/order": [
       "error",
       {
@@ -43,12 +52,15 @@
           "type"
         ],
         "newlines-between": "always",
-        "alphabetize": { "order": "asc" }
+        "alphabetize": {
+          "order": "asc"
+        }
       }
     ],
     "import/prefer-default-export": "off",
     "no-console": "off",
     "no-unused-vars": "off",
+    "no-shadow": "off",
     "no-void": "off",
     "prettier/prettier": "error",
     "react/function-component-definition": [
@@ -64,10 +76,25 @@
         "custom": "ignore"
       }
     ],
-    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
-    "react/no-unknown-property": ["error", { "ignore": ["tw", "css"] }],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/no-unknown-property": [
+      "error",
+      {
+        "ignore": ["tw", "css"]
+      }
+    ],
     "react/require-default-props": "off",
-    "sort-imports": ["error", { "ignoreDeclarationSort": true }]
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
